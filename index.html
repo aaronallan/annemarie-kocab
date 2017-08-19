@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Annemarie Kocab</title>
+</head>
+<body>
+	<header>
+    <nav class="mobile-menu" role="navigation">
+      <ul>
+        <li class="menu-item active"><a href="#research-interests" value="index">Research Interests</a></li>
+        <li class="menu-item"><a href="#publications" value="visit">Publications</a></li>
+        <li class="menu-item"><a href="#collaborators" value="visit">Collaborators</a></li>
+        <li class="menu-item"><a href="#participate" value="ceremonies">Particpate</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger">
+      <span role="presentation"></span>
+      <span role="presentation"></span>
+      <span role="presentation"></span>
+    </div>
+
+    <nav class="desktop-menu">
+      <ul>
+        <li class=" menu-item active"><a href="#research-interests" value="index">Research Interests</a></li>
+        <li class="menu-item"><a href="#publications" value="ceremonies">Publications</a></li>
+        <li class="menu-item"><a href="#collaborators" value="visit">Collaborators</a></li>
+        <li class="menu-item"><a href="#participate" value="ceremonies">Particpate</a></li>
+      </ul>
+    </nav>
+	</header>
+
+	<div class="wrapper">
+	  <section>
+			<div id="content" class="content" role="main">
+        <div class="content-inner"></div>
+      </div>
+	  </section>
+  </div>
+
+  <script src="build/libs-production.js"></script>
+  <script type="text/javascript" src="build/production.js"></script>
+
+  <script type="text/javascript">
+    var router = new ApplicationRouter($('#content'));
+    Backbone.history.start();
+  </script>
+
+</body>
+</html>
