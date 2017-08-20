@@ -159,8 +159,8 @@ section {
 }
 
 .hamburger {
-  width: 10%;
-  float: left;
+  width: 50px;
+  float: right;
   height: 42px;
   padding: 5px 0;
   @media (all and min-width: 400px) {
@@ -184,50 +184,40 @@ section {
   }
 }
 
-nav.mobile-menu {
-  display: none;
-
-  ul {
-    width: 100%;
-    li {
-      display: inline-block;
-      float: left;
-      width: 100%;
-      border-bottom: solid 1px #ddd;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      a {
-        display:block;
-        color: #514f4f;
-        padding: 1em .5em;
-        text-decoration: none;
-      }
-    }
+header  {
+  .logo {
+    display: inline-block;
+    padding: 1em 0.5em;
+    text-transform: uppercase;
+    font-size: .85em;
+    font-family: 'ProximaNova-Regular';
   }
 }
-nav.desktop-menu {
-  display: none;
-  @media (all and min-width: 640px) {
-    display: block;
-    background: #efefef;
-    border-bottom: solid 1px #ccc;
-  }
+
+nav.nav-menu {
   float: left;
   width: 100%;
+  @media (all and min-width: 640px) {
+    float: right;
+    width: auto;
+    background: #efefef;
+  }
 
   ul {
     margin: 0em;
     width: 100%;
-    max-width: 600px;
+    max-width: 640px;
 
     li {
       display: inline-block;
+      width: 100%;
       float: left;
-      text-align: center;
       border-bottom: solid 1px #efefef;
+
+      @media (all and min-width: 640px) {
+        width: auto;
+        text-align: center;
+      }
 
       &.active,
       &:focus {

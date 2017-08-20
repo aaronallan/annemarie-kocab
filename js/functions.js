@@ -2,9 +2,17 @@
   $(document).on('ready', function (){
 
     // Hide / Show movile menu
-    $('.hamburger, .mobile-menu ul li').on('click', function () {
-      $('.mobile-menu').slideToggle();
+    $('.hamburger').on('click', function () {
+      $('.nav-menu').slideToggle();
     });
+
+
+      $('.nav-menu ul li').on('click', function () {
+        if ($(window).width() < 640) {
+          $('.nav-menu').slideToggle();
+        }
+      })
+
 
     //Hide Info Modal
     $('.close').on('click', function () {
@@ -25,5 +33,9 @@
         }
       });
     });
+
+    $(window).on('resize', function () {
+      $(window).width() > 640 ? $('.nav-menu').attr('style', 'display: block') : $('.nav-menu').attr('style', 'display: none');
+    })
 
 })(jQuery);
