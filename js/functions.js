@@ -11,6 +11,8 @@
       }
     })
 
+    $(window).width() > 830 ? $('.nav-menu').attr('style', 'display: block') : $('.nav-menu').attr('style', 'display: none');
+
   });
 
   $(window).on('resize', function () {

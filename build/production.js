@@ -38,38 +38,25 @@ var ApplicationRouter = Backbone.Router.extend({
 		$("li a[href='" + url + "']").parents('li').addClass('active');
 	},
 
-	removePadding: function () {
-		$('.content, .content-inner').css('padding', 0);
-	},
-
-	addPadding: function () {
-		$('.content').css('padding', '2em');
-	},
-
 	researchInterests: function() {
 		this.switchView(this.researchInterestsView);
 		this.setActiveTab('#research-interests');
-		this.addPadding();
 	},
 	publications: function() {
 		this.switchView(this.publicationsView);
 		this.setActiveTab('#publications');
-		this.addPadding();
 	},
 	collaborators: function() {
 		this.switchView(this.collaboratorsView);
 		this.setActiveTab('#collaborators');
-		this.addPadding();
 	},
 	cv: function() {
 		this.switchView(this.cvView);
 		this.setActiveTab('#cv');
-		this.removePadding();
 	},
 	participate: function() {
 		this.switchView(this.participateView);
 		this.setActiveTab('#participate');
-		this.addPadding();
 	},
 
 	notFound: function() {
@@ -174,6 +161,8 @@ var ContentPaneView = Backbone.View.extend({
         $('.nav-menu').slideToggle();
       }
     })
+
+    $(window).width() > 830 ? $('.nav-menu').attr('style', 'display: block') : $('.nav-menu').attr('style', 'display: none');
 
   });
 
