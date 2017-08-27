@@ -25,6 +25,16 @@
       }
     })
 
+    $('.contact-link').on('click', function () {
+      $('.tooltip').toggle();
+    })
+
+    $('.contact-link').on('keypress', function (e) {
+      if (e.keyCode === 13) {
+        $('.tooltip').toggle();
+      }
+    })
+
     $(window).width() > 830 ? $('.nav-menu').attr('style', 'display: block') : $('.nav-menu').attr('style', 'display: none');
 
   });

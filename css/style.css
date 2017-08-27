@@ -108,10 +108,14 @@ section {
       margin-right: 0; }
 
 .bg-image {
-  width: 100%;
-  height: calc(100vh - 60px);
-  background-image: url("../img/image-1.jpg");
-  background-size: cover; }
+  width: 100%; }
+  @media (min-width: 830px) {
+    .bg-image {
+      height: calc(100vh - 60px);
+      background-image: url("../img/image-1.jpg");
+      background-size: auto 100%;
+      background-position: right;
+      background-repeat: no-repeat; } }
 
 .welcome-container {
   position: relative;
@@ -137,6 +141,10 @@ section {
     .section-container {
       padding: 3em 2em;
       width: 75%; } }
+
+.article-container {
+  padding-bottom: 1em;
+  border-bottom: solid 1px #ddd; }
 
 .link-container {
   display: inline-block;
@@ -283,14 +291,14 @@ nav.nav-menu {
   top: 50%;
   transform: translateY(-50%);
   float: right;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   background: #303E48;
   color: white;
   text-align: center;
-  line-height: 41px;
+  line-height: 46px;
   border-radius: 50%;
-  margin-left: 1em;
+  margin-left: 0.5em;
   cursor: pointer;
   text-decoration: none; }
   @media (min-width: 830px) {
@@ -301,6 +309,45 @@ nav.nav-menu {
   width: 100%;
   height: 100%;
   margin: 0 auto; }
+
+.contact-link {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #303E48;
+  cursor: pointer; }
+  .contact-link .fa {
+    color: #ffffff;
+    line-height: 50px; }
+
+.tooltip {
+  display: none;
+  border-radius: 5px;
+  background: #303E48;
+  position: absolute;
+  bottom: 85px;
+  right: 1em;
+  padding: 2em 1em; }
+  .tooltip:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: -12.5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 17.5px 0 17.5px;
+    border-color: #303E48 transparent transparent transparent; }
+  .tooltip p, .tooltip a {
+    color: #ffffff;
+    line-height: 1.7em; }
+  .tooltip a {
+    display: block;
+    margin-top: 0.5em; }
 
 .icon {
   display: none;
