@@ -119,7 +119,7 @@ section {
 
 .welcome-container {
   position: relative;
-  padding: 1em 0.5em;
+  padding: 2em 1.5em;
   width: 100%; }
   @media (min-width: 830px) {
     .welcome-container {
@@ -135,7 +135,7 @@ section {
         font-size: 1.2em; } }
 
 .section-container {
-  padding: 2em 0.5em;
+  padding: 2em 1.5em;
   width: 100%; }
   @media (min-width: 830px) {
     .section-container {
@@ -152,48 +152,6 @@ section {
   .link-container .fa {
     color: #009678;
     margin-right: 0.25em; }
-
-.loading-cog {
-  text-align: center;
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 4000ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 4000ms;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 4000ms;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-  animation-name: spin;
-  animation-duration: 4000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
-@-ms-keyframes spin {
-  from {
-    -ms-transform: rotate(0deg); }
-  to {
-    -ms-transform: rotate(360deg); } }
-@-moz-keyframes spin {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg); } }
-@keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-  .loading-cog .fa-cog:before {
-    font-size: 2em;
-    color: #4b938f; }
 
 .hamburger {
   width: 30px;
@@ -243,8 +201,7 @@ nav.nav-menu {
   float: left;
   width: 100%;
   background: #009678;
-  z-index: -1;
-  padding-top: 30px; }
+  z-index: -1; }
   @media (min-width: 830px) {
     nav.nav-menu {
       float: right;
@@ -252,12 +209,14 @@ nav.nav-menu {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 1;
-      padding-top: 0px; } }
+      z-index: 1; } }
   nav.nav-menu ul {
-    margin: 0em;
+    margin: 30px 0 0 0;
     width: 100%;
     max-width: 830px; }
+    @media (min-width: 830px) {
+      nav.nav-menu ul {
+        margin: 0; } }
     nav.nav-menu ul li {
       display: inline-block;
       width: 100%;
@@ -311,15 +270,19 @@ nav.nav-menu {
   margin: 0 auto; }
 
 .contact-link {
-  position: absolute;
-  right: 1em;
-  bottom: 1em;
+  position: fixed;
+  right: 0.5em;
+  bottom: 0.5em;
   text-align: center;
   width: 50px;
   height: 50px;
   border-radius: 25px;
   background: #303E48;
   cursor: pointer; }
+  @media (min-width: 830px) {
+    .contact-link {
+      right: 1em;
+      bottom: 1em; } }
   .contact-link .fa {
     color: #ffffff;
     line-height: 50px; }
@@ -329,9 +292,13 @@ nav.nav-menu {
   border-radius: 5px;
   background: #303E48;
   position: absolute;
-  bottom: 85px;
-  right: 1em;
+  bottom: 79px;
+  right: 0.5em;
   padding: 2em 1em; }
+  @media (min-width: 830px) {
+    .tooltip {
+      right: 1em;
+      bottom: 85px; } }
   .tooltip:after {
     content: "";
     position: absolute;
@@ -361,62 +328,11 @@ nav.nav-menu {
     .icon {
       display: block; } }
 
-.modal {
-  display: none; }
-  .modal .close {
-    position: absolute;
-    right: .5em;
-    bottom: .5em;
-    color: #4b938f;
-    font-size: 2em; }
-  .modal .wrapper {
-    width: 96%;
-    max-width: 400px;
-    margin: 2em auto;
-    padding-bottom: 2em;
-    overflow: scroll; }
-    @media (min-width: 830px) {
-      .modal .wrapper {
-        width: 50%; } }
-    .modal .wrapper img {
-      width: 100%; }
-    .modal .wrapper p {
-      line-height: 1.6em; }
-    .modal .wrapper a {
-      text-decoration: none;
-      color: #514f4f; }
-      .modal .wrapper a span {
-        font-size: 1em;
-        text-align: left;
-        padding: 0; }
-      .modal .wrapper a:hover {
-        text-decoration: none; }
-      .modal .wrapper a:visited {
-        color: #514f4f;
-        text-decoration: none; }
-    .modal .wrapper h2 {
-      color: #4b938f;
-      font-size: 1.2em;
-      line-height: 1.5em;
-      margin: .5em 0;
-      padding-bottom: 0.2em;
-      text-decoration: underline; }
-
 .disclaimer {
   margin-top: 3em;
   padding: 1em 0;
   font-size: 0.9em;
   line-height: 1.4em;
   font-style: italic; }
-
-.show {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.98);
-  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */
