@@ -33,7 +33,6 @@
 
 	<div class="wrapper">
 		<div id="content" class="content" role="main">
-
       <div class="content-inner"></div>
     </div>
   </div>
@@ -41,6 +40,7 @@
   <div class="contact-link" tabindex="0">
     <i class="fa fa-envelope-o" aria-hidden="true"></i>
   </div>
+
   <div class="tooltip">
     <p tabindex="0">Annemarie Kocab</p>
     <p tabindex="0">William James Hall</p>
@@ -49,9 +49,19 @@
     <a href="mailto:kocab@fas.harvard.edu">kocab@fas.harvard.edu</a>
   </div>
 
-  <script src="build/libs-production.js"></script>
-  <script type="text/javascript" src="build/production.js"></script>
+  <!-- Bundled vendor Libraries (Jquery, BackBone, Underscore) -->
+  <script src="js/libs-production-min.js"></script>
 
+  <!--  Backbone Routing and Views -->
+  <script type="text/javascript" src="js/ContentPaneView.js"></script>
+  <script type="text/javascript" src="js/ApplicationRouter.js"></script>
+  <script type="text/javascript" src="js/BackboneView.js"></script>
+  <script type="text/javascript" src="js/templateManager.js"></script>
+
+  <!--  jQuery Functions -->
+  <script type="text/javascript" src="js/functions.js"></script>
+
+  <!-- Start Router -->
   <script type="text/javascript">
     var router = new ApplicationRouter($('#content'));
     Backbone.history.start();
