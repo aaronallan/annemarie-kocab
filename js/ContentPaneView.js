@@ -4,7 +4,7 @@ var ContentPaneView = Backbone.View.extend({
 		this.template = options.template;
 	},
 
-	el: "div.content-inner",
+	el: "div.page-templates",
 
 	imgLoaded: false,
 

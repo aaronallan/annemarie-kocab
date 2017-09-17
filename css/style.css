@@ -107,10 +107,10 @@ section {
     .content-inner li:last-child {
       margin-right: 0; }
 
-.bg-image {
+.welcome-background-image {
   width: 100%; }
   @media (min-width: 830px) {
-    .bg-image {
+    .welcome-background-image {
       height: calc(100vh - 60px);
       background-image: url("../img/image-1.jpg");
       background-size: auto 100%;
