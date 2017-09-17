@@ -122,7 +122,7 @@ body {
 @media (min-width: 830px) {
   .welcome-background-image {
     height: calc(100vh - 60px);
-    background-image: url("../img/image-1.jpg");
+    background-image: url("../img/background-image-min.jpg");
     background-size: auto 100%;
     background-position: right;
     background-repeat: no-repeat;
