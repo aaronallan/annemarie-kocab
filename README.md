@@ -16,7 +16,7 @@
 1. Run site locally
 2. Make changes.
 3. Using the Github app:
-..* Review Changes (additions in green, deletions in red)
-..* Add a commit message in the input box labeled "Summary"
-..* Commit changes (Click button that says "Commit to gh-pages")
-..* Push Changes to production site `(cmd + P)`
+* Review Changes (additions in green, deletions in red)
+* Add a commit message in the input box labeled "Summary"
+* Commit changes (Click button that says "Commit to gh-pages")
+* Push Changes to production site `(cmd + P)`
