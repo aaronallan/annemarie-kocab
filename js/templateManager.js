@@ -10,7 +10,7 @@ TemplateManager = {
     } else {
 
       var that = this;
-      $.get("rachel/" + id + ".html", function(template) {
+      $.get("templates/" + id + ".html", function(template) {
         var html = $(template);
         that.templates[id] = html;
         callback(html);
