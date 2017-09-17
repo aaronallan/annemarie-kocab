@@ -33,9 +33,9 @@ There are a few steps required to add a new page:
 * Add a function to call when the route is hit.
 ```
 about: function() {
-		this.switchView(this.aboutView);
-		this.setActiveTab('#about');
-	},
+	this.switchView(this.aboutView);
+	this.setActiveTab('#about');
+},
 ```
 4. Test new page.
 5. Note: new pages may require style updates to the navigation.
