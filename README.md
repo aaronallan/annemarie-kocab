@@ -4,7 +4,7 @@
 Open terminal App
 `cd /Users/RachelMagid/Documents/Rachel/Personal/AK Website/annemarie-kocab`
 `npm start` runs the project at http://localhost:3000/.
-`control c to stop`
+`control + c` to stop
 
 **Before updating local files:**
 

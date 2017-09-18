@@ -158,6 +158,25 @@ body {
 
 /* 4. About Page-- */
 
+.left-column {
+  float: left;
+    width: 100%;
+}
+
+.right-column {
+  float: left;
+    width: 100%;
+}
+
+@media (min-width: 840px) {
+  .left-column {
+      width: 60%;
+  }
+
+  .right-column {
+      width: 40%;
+  }
+}
 
 /* 5. General Pages-- */
 
