@@ -157,6 +157,9 @@ body {
 
 
 /* 4. About Page-- */
+.column-container {
+  overflow: hidden;
+}
 
 .left-column {
   float: left;
@@ -176,6 +179,10 @@ body {
   .right-column {
       width: 40%;
   }
+}
+
+.headshot {
+width: 75%
 }
 
 /* 5. General Pages-- */
