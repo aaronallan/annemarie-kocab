@@ -6,7 +6,7 @@ var ApplicationRouter = Backbone.Router.extend({
 		this.participateView = new ContentPaneView({template: 'participate'});
 		this.publicationsView = new ContentPaneView({template: 'publications'});
 		this.collaboratorsView = new ContentPaneView({template: 'collaborators'});
-		//this.aboutView = new ContentPaneView({template: 'about'});
+		this.aboutView = new ContentPaneView({template: 'about'});
 		this.cvView = new ContentPaneView({template: 'cv'});
 		this.notFoundView = new ContentPaneView({template: 'not-found'});
 	},
@@ -17,7 +17,7 @@ var ApplicationRouter = Backbone.Router.extend({
 		"publications" : "publications",
 		"collaborators" : "collaborators",
 		"participate" : "participate",
-		// "about" : "about",
+		"about" : "about",
 		"cv" : "cv",
 		"*else": "notFound"
 	},
@@ -52,10 +52,10 @@ var ApplicationRouter = Backbone.Router.extend({
 		this.switchView(this.collaboratorsView);
 		this.setActiveTab('#collaborators');
 	},
-	// about: function() {
-	// 	this.switchView(this.aboutView);
-	// 	this.setActiveTab('#about');
-	// },
+	about: function() {
+	this.switchView(this.aboutView);
+	this.setActiveTab('#about');
+	},
 	cv: function() {
 		this.switchView(this.cvView);
 		this.setActiveTab('#cv');
