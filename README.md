@@ -1,10 +1,10 @@
 # Annemarie Kocab Site
 
 ## Local development
-Open terminal App
-`cd /Users/RachelMagid/Documents/Rachel/Personal/AK Website/annemarie-kocab`
-`npm start` runs the project at http://localhost:3000/.
-`control + c` to stop
+1. Open terminal App
+2. `cd /Users/RachelMagid/Documents/Rachel/Personal/AK Website/annemarie-kocab`
+3. `npm start` runs the project at http://localhost:3000/.
+4. `control + c` to stop server
 
 **Before updating local files:**
 
@@ -41,3 +41,7 @@ about: function() {
 ```
 4. Test new page.
 5. Note: new pages may require style updates to the navigation.
+
+## Resources
+1. HTML - https://digital.com/tools/html-cheatsheet/
+2. CSS - https://www.onblastblog.com/css3-cheat-sheet/
