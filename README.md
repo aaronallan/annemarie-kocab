@@ -2,7 +2,7 @@
 
 ## Local development
 1. Open terminal App
-2. `cd /Users/RachelMagid/Documents/Rachel/Personal/AK Website/annemarie-kocab`
+2. `cd Users/RachelMagid/Documents/Rachel/Personal/AK_Website/annemarie-kocab`
 3. `npm start` runs the project at http://localhost:3000/.
 4. `control + c` to stop server
 
